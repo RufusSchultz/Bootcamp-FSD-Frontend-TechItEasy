@@ -1,0 +1,87 @@
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main section {
+    margin: var(--global-margin);
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+:root {
+    --global-margin: 2rem 2rem;
+    --green-outer-color: #185000;
+    --green-inner-color: #99c188;
+    --blue-outer-color: #014584;
+    --blue-inner-color: #a4c8e9;
+    --red-outer-color: #FF0000;
+    --red-inner-color: #FAB2B2;
+}
+
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+header {
+    margin: var(--global-margin);
+}
+
+/* --------------- 4.2 Verkoopoverzicht ------------------- */
+
+.stockWrapper {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.stockArticle {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+
+}
+
+.importantNumber {
+    font-size: 2rem;
+}
+
+#numberOfUnitsSold {
+    border: solid var(--green-outer-color);
+    color: var(--green-outer-color);
+    background-color: var(--green-inner-color);
+}
+
+#totalStockPurchased {
+    border: solid var(--blue-outer-color);
+    color: var(--blue-outer-color);
+    background-color: var(--blue-inner-color);
+}
+
+#numberOfUnitsToSell {
+    border: solid var(--red-outer-color);
+    color: var(--red-outer-color);
+    background-color: var(--red-inner-color);
+}
+/* --------------- 4.3 Best verkochte tv ------------------- */
+
+/* --------------- 4.4 Footer ------------------- */
