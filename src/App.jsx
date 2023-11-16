@@ -1,12 +1,11 @@
 import './App.css';
-import {numberOfUnitsSold} from "./Helpers/numberOfUnitsSold.js";
-import {totalStockPurchased} from "./Helpers/totalStockPurchased.js";
-import {numberOfUnitsToSell} from "./Helpers/numberOfUnitsToSell.js";
-import {bestSellingTvString} from "./Helpers/bestSellingTvString.js";
-import {allUnitSizesString} from "./Helpers/allUnitSizesString.js";
-import {numberToPricing} from "./Helpers/numberToPricing.js";
+import {numberOfUnitsSold} from "./helpers/numberOfUnitsSold.js";
+import {totalStockPurchased} from "./helpers/totalStockPurchased.js";
+import {numberOfUnitsToSell} from "./helpers/numberOfUnitsToSell.js";
+import {bestSellingTvString} from "./helpers/bestSellingTvString.js";
+import {allUnitSizesString} from "./helpers/allUnitSizesString.js";
+import {numberToPricing} from "./helpers/numberToPricing.js";
 import {bestSellingTv} from "./constants/inventory.js";
-import samsung_UHD55AU7040 from "./assets/samsung_ue55au7040.png";
 import check_icon from "./assets/check.png";
 import not_icon from "./assets/minus.png";
 import logo from "./assets/tech_it_easy.png";
@@ -61,7 +60,7 @@ function App() {
                     <h2>Best verkochte tv</h2>
                     <article className="best_selling_unit_article">
                         <span id="best_selling_unit_image_wrapper">
-                            <img src={samsung_UHD55AU7040} alt="Samsung UHD 55AU7040"/>
+                            <img src={bestSellingTv.sourceImg} alt="Samsung UHD 55AU7040"/>
                         </span>
 
                         <div className="best_selling_unit_wrapper">

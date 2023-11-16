@@ -1,7 +1,7 @@
-import {inventory} from "../constants/inventory.js";
+import {bestSellingTv, inventory} from "../constants/inventory.js";
 
 export function numberOfUnitsSold() {
-    let total = 0;
+    let total = bestSellingTv.sold;
     for (let i = 0; i < inventory.length; i++) {
         total += inventory[i].sold;
     }

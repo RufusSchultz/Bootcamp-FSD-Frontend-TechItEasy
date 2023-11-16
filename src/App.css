@@ -78,7 +78,7 @@ header {
 }
 
 #logo {
-    flex-basis: 200px;
+    width: 200px;
 }
 
 /* --------------- 4.2 Verkoopoverzicht ------------------- */
@@ -146,10 +146,8 @@ header {
 }
 
 #best_selling_unit_image_wrapper {
-    display: flex;
-    flex-basis: 250px;
-    flex-grow: 0;
-    flex-shrink: 1;
+    width: 250px;
+
 }
 
 #best_selling_unit_features {
@@ -157,12 +155,11 @@ header {
     gap: 0.5rem;
     flex-grow: 0;
     flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .featured_features_best_selling_unit {
-    display: flex;
-    flex-basis: 20px;
-    height: auto;
+    width: 1rem;
 }
 
 /* --------------- 4.4 Footer ------------------- */
