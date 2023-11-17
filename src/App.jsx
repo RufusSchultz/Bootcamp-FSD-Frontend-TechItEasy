@@ -20,15 +20,18 @@ function App() {
     // console.log(totalStockPurchased());
 
     function bestSellerFirst() {
-        console.log("Meest verkocht eerst");
+        const bestSellerFirst = inventory.sort((a, b) => b.sold - a.sold);
+        console.log(bestSellerFirst);
     }
 
     function cheapestFirst() {
-        console.log("Goedkoopste eerst");
+        const cheapestFirst = inventory.sort((a, b) => a.price - b.price);
+        console.log(cheapestFirst);
     }
 
     function bestForSportsFirst() {
-        console.log("Meest geschikt voor sport eerst");
+        const bestForSportsFirst = inventory.sort((a, b) => b.refreshRate - a.refreshRate);
+        console.log(bestForSportsFirst);
     }
 
     return (
